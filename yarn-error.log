@@ -1,0 +1,60 @@
+Arguments: 
+  /Users/mahali/.nvm/versions/node/v18.14.2/bin/node /opt/homebrew/bin/yarn install
+
+PATH: 
+  /Users/mahali/.yarn/bin:/Users/mahali/.config/yarn/global/node_modules/.bin:/Users/mahali/.volta/bin:/Users/mahali/.nvm/versions/node/v18.14.2/bin:/usr/local/opt/libpq/bin:/Users/mahali/Documents/Work/ME/remix-platforms/jdk-11.0.13+8/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/mahali/.yarn/bin:/Users/mahali/.config/yarn/global/node_modules/.bin:/Users/mahali/.volta/bin:/Users/mahali/.nvm/versions/node/v18.14.2/bin:/usr/local/opt/libpq/bin:/Users/mahali/jdk-11.0.13+8/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/mahali/.cargo/bin:/Users/mahali/.fig/bin:/Users/mahali/.local/bin:/Users/mahali/Library/Android/sdk/emulator:/Users/mahali/Library/Android/sdk/tools:/Users/mahali/Library/Android/sdk/tools/bin:/Users/mahali/Library/Android/sdk/platform-tools:/usr/local/go/bin:/Users/mahali/Library/Android/sdk/emulator:/Users/mahali/Library/Android/sdk/tools:/Users/mahali/Library/Android/sdk/tools/bin:/Users/mahali/Library/Android/sdk/platform-tools:/bin:/Users/mahali/.volta/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.14.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/mahali/Library/Caches/Yarn/v6/npm-lru-cache-6.0.0-6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94-integrity/node_modules/lru-cache/LICENSE' -> '/Users/mahali/Documents/Work/ME/remix-platforms/node_modules/@remix-run/dev/node_modules/lru-cache/LICENSE'
+
+npm manifest: 
+  {
+    "private": true,
+    "sideEffects": false,
+    "scripts": {
+      "build": "prisma generate && npm run build:css && remix build",
+      "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+      "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+      "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css"
+    },
+    "dependencies": {
+      "@prisma/client": "4.14.0",
+      "@remix-run/node": "^1.15.0",
+      "@remix-run/react": "^1.15.0",
+      "@remix-run/serve": "^1.15.0",
+      "isbot": "latest",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^1.15.0",
+      "@remix-run/eslint-config": "^1.15.0",
+      "@types/react": "^18.0.25",
+      "@types/react-dom": "^18.0.11",
+      "autoprefixer": "^10.4.14",
+      "concurrently": "^8.0.1",
+      "eslint": "^8.28.0",
+      "postcss": "^8.4.23",
+      "prisma": "^4.14.0",
+      "tailwindcss": "^3.3.2",
+      "typescript": "^4.9.3"
+    },
+    "engines": {
+      "node": ">=14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
